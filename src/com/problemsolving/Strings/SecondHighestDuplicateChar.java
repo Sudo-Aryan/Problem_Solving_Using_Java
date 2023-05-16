@@ -46,4 +46,3 @@ public class SecondHighestDuplicateChar {
         return secondHighest;
     }
 }
-
