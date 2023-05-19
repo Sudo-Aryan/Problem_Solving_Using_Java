@@ -13,7 +13,7 @@ public class NNonRepeatingCharacter {
             arr[c]++;
         }
 
-        System.out.println(Arrays.toString(arr));
+//        System.out.println(Arrays.toString(arr));
         for (int i = 0; i < charr.length; i++) {
             if(arr[charr[i]] == 1){
                 count++;
