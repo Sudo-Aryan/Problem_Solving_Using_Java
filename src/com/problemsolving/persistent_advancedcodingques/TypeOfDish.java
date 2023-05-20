@@ -14,7 +14,7 @@ public class TypeOfDish {
         Map<Integer, Integer> dishCount = new HashMap<>();
 
         int i = 0; int ptr = 0;
-        while (i < arr.length) { // 1 2 2 1 2 1 1 1 1
+        while (i < arr.length) {
             int added = ((-1) * arr[i]);
 //            System.out.println(added);
             if (dishCount.containsKey(arr[i])) {
@@ -29,8 +29,8 @@ public class TypeOfDish {
             i++;
             ptr++;
         }
-        System.out.println(dishCount);
-        System.out.println(Arrays.toString(arr));
+//        System.out.println(dishCount);
+//        System.out.println(Arrays.toString(arr));
 //        System.out.println(dishCount.get(arr[1]));
 
             for (Map.Entry<Integer,Integer> m : dishCount.entrySet()) {
