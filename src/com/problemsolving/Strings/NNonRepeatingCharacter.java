@@ -12,7 +12,6 @@ public class NNonRepeatingCharacter {
         for (char c : charr) {
             arr[c]++;
         }
-
 //        System.out.println(Arrays.toString(arr));
         for (int i = 0; i < charr.length; i++) {
             if(arr[charr[i]] == 1){
@@ -22,12 +21,11 @@ public class NNonRepeatingCharacter {
                 }
             }
         }
-
-        return ' ';
+        return '!';
     }
 
     public static void main(String[] args){
-        String str = "Aryan".toUpperCase();
+        String str = "Aryanzn".toUpperCase();
         System.out.println(repeat(str,3));
     }
 }
