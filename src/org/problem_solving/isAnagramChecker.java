@@ -5,17 +5,24 @@ import java.util.Scanner;
 
 public class isAnagramChecker {
 
-    private static boolean isAnagram(String str1, String str2) {
-        if(str1.length() == str2.length()){
-            char[] arr1 = str1.toCharArray();
-            char[] arr2 = str2.toCharArray();
-
-            Arrays.sort(arr1);
-            Arrays.sort(arr2);
-
-            return Arrays.equals(arr1, arr2);
+    private static boolean isAnagram(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
         }
-        return false;
+
+        int[] freq = new int[26];
+        for (int i = 0; i < s.length(); i++) {
+            freq[s.charAt(i) - 'a']++;
+            freq[t.charAt(i) - 'a']--;
+        }
+
+        for (int j : freq) {
+            if (j != 0) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     public static void main(String[] args) {

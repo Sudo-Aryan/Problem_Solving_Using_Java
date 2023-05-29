@@ -1,11 +1,9 @@
 package com.problemsolving.Strings;
 
 import java.util.Arrays;
-
 public class NNonRepeatingCharacter {
-
     private static char repeat(String str, int n){
-        int[] arr = new int[91];
+        int[] arr = new int[128];
         char[] charr = str.toCharArray();
         int count = 0;
 
